@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rgl-links</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+  <link rel="preload" as="script" href="/rg-eli/assets/rgl-links-c027aa1e3d380982.js" crossorigin><link rel="preload" as="fetch" type="application/wasm" href="/rg-eli/assets/rgl-links_bg-4f6990ae88927933.wasm" crossorigin></head>
+  <body>
+    <div id="main"></div>
+  <script>
+            // We can't use a module script here because we need to start the script immediately when streaming
+            import("/rg-eli/assets/rgl-links-c027aa1e3d380982.js").then(
+                ({ default: init }) => {
+                init("/rg-eli/assets/rgl-links_bg-4f6990ae88927933.wasm").then((wasm) => {
+                    if (wasm.__wbindgen_start == undefined) {
+                    wasm.main();
+                    }
+                });
+                }
+            );
+            </script>
+            
+            </body>
+</html>
